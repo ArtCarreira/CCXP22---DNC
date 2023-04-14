@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="/script.js" defer></script>
+    <title>CCXP22</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="/img/logo.svg" alt="Logotipo CCXP22">
+    </header>
+
+    <section id="section1">
+        <div class="descricao">
+            <h1 id="titulo">REVIVA O ÉPICO</h1>
+            <p id="dataEvento"> DE 01 A 04 DE DEZEMBRO </p>
+            <h2 id="conteudo">Você consegue sentir? É aquela sensação de
+                finalmente poder falar em voz alta: "estamos
+                em casa". Sim, em dezembro de 2022,
+                teremos a volta da CCXP física. Mas não será
+                qualquer CCXP, vai ser a maior de todos os
+                tempos. Prepare-se para visitar seus
+                universos favoritos, explorar o Artists' Valley,
+                se emocionar nos auditórios e encontrar
+                aventuras épicas a cada passo pelos nossos
+                corredores.</h2>
+        </div>
+
+        <div class="relogio">
+            <div id="countDown">
+                <p class="cd" id="data"></p>
+                <p class="cd" id="hour"></p>
+                <p class="cd" id="min"></p>
+                <p class="cd" id="sec"></p>
+            </div>
+
+            <div class="textHour">
+                <p id="aviso">PARA A MAIOR CCXP DE TODOS OS TEMPOS</p>
+            </div>
+
+            <div id="video">
+                <video src="/video/Arlequina.mp4" controls-none autoplay muted type="mp4" width="100%"></video>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="section2">
+        <div id="ingressos">
+            <div id="textoIngresso">
+                <p>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
+            </div>
+
+            <div id="desktop">
+
+                <div id="imgIngressos">
+                    <img class="card" id="quinta" src="/img/img1.svg" alt="" onclick="selectCard('#quinta')" onmouseover="highlightCards('#quinta')" onmouseout="highlightCards('#quinta')">
+                    <img class="card" id="sexta" src="/img/img2.svg" alt="" onclick="selectCard('#sexta')" onmouseover="highlightCards('#sexta')" onmouseout="highlightCards('#sexta')"> 
+                    <img class="card" id="sabado" src="/img/img3.svg" alt="" onclick="selectCard('#sabado')" onmouseover="highlightCards('#sabado')" onmouseout="highlightCards('#sabado')">
+                    <img class="card" id="domingo" src="/img/img4.svg" alt="" onclick="selectCard('#domingo')" onmouseover="highlightCards('#domingo')" onmouseout="highlightCards('#domingo')">
+                </div>
+
+                <div>
+                    <button id="comprar" onclick="showSelectedCards()">GARANTA O SEU!</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <form action="https://github.com/ArtCarreira">
+            <input id="email" type="email" placeholder="Seu E-mail" required>
+            <!-- <input id="submit" type="submit"> -->
+        </form>
+
+        <button id="enviar">Enviar</button>
+
+        <p id="copyR"><a href="https://github.com/ArtCarreira" target="_blank">CopyRight &copy; Artafari I</a></p>
+
+    </footer>
+
+</body>
+
+</html>

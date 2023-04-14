@@ -1,0 +1,426 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: 'Verdana';
+}
+
+a {
+    text-decoration: none;
+    color: #514988;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #FFD900;
+
+    width: 100%;
+    height: 100%;
+}
+
+header img {
+    width: 10rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#section1 {
+    display: grid;
+}
+
+.descricao {
+    background-color: #514988;
+}
+
+#titulo {
+    text-align: center;
+    color: #F3C61F;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 2.3em;
+    line-height: 35px;
+}
+
+#dataEvento {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.3em;
+    line-height: 40px;
+}
+
+#conteudo {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 23px;
+}
+
+#countDown {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #514988;
+    padding: 10px;
+}
+
+.cd {
+    margin-left: 10px;
+}
+
+#aviso {
+    color: #E33881;
+    font-weight: 700;
+    font-size: 0.9em;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+#textoIngresso {
+    color: #F3C61F;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 20px;
+
+    align-items: center;
+    text-align: center;
+
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+#imgIngressos {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+#comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #514988;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    width: 60%;
+    height: 45px;
+
+    border: none;
+
+    font-size: 1em;
+    font-weight: 700;
+}
+
+#comprar:hover {
+    background-color: #F3C61F;
+    transform: scale(0.8);
+    transition: 0.4s;
+    color: #514988;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #FFD900;
+    text-align: center;
+    font-size: 0.8em;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+#email {
+    border-radius: 20px;
+    border: none;
+
+    background-color: #514988;
+    width: 80%;
+    height: 45px;
+
+    padding: 10px;
+    color: white;
+
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+#email::placeholder {
+    color: white;
+}
+
+/* #submit{
+    border-radius: 20px;
+    border: none;
+
+    background-color: #514988;
+    width: 100px;
+    height: 30px;
+
+    font-size: 0.9em;
+
+    color: white;
+
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+} */
+
+#enviar {
+    border-radius: 20px;
+    border: none;
+
+    background-color: #514988;
+    width: 80%;
+    height: 45px;
+
+    font-size: 1em;
+
+    color: white;
+
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    margin-top: 15px;
+}
+
+#enviar:hover{
+    background-color: #F3C61F;
+    transform: scale(0.8);
+    transition: 0.4s;
+    color: #514988;
+    cursor: pointer;
+}
+
+#copyR {
+    font-size: 0.6;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    color: #514988;
+}
+
+.card-highlight{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.card-selected{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.75rem rgb(12, 0, 187));
+}
+
+.card-off{
+    filter: grayscale(1);
+    transition: 0.5;
+}
+
+@media screen and (min-width: 800px) {
+
+    #section1 {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    #video {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #titulo {
+        font-size: 1.4rem;
+    }
+
+    #dataEvento {
+        font-size: 1rem;
+    }
+
+    .descricao {
+        height: auto;
+        width: 100%;
+    }
+
+    #conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        font-weight: 300;
+    }
+
+    #countDown {
+
+        font-size: 1.7rem;
+    }
+
+    #aviso {
+
+        font-weight: 700;
+        font-size: 1.2em;
+        line-height: 20px;
+        text-align: center;
+
+    }
+
+    #textoIngresso {
+        font-size: 1.4em;
+        line-height: 20px;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    #comprar {
+        margin-top: 20px;
+        width: 300px;
+
+    }
+
+    #email {
+        width: 500px;
+        font-size: 1rem;
+    }
+
+    #enviar {
+        width: 285px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    header{
+        justify-content: flex-start;
+    }
+
+    .logo{
+        margin-left: 40px;
+    }
+
+    #titulo {
+        font-size: 2.5rem;
+        margin-top: 25px;
+    }
+
+    #dataEvento {
+        font-size: 1.3rem;
+    }
+
+    .descricao {
+        height: auto;
+        width: 100%;
+    }
+
+    #conteudo {
+        font-size: 1rem;
+    }
+
+    #desktop{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .card{
+        width: 150px;
+    }
+
+    #comprar{
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 330px;
+    }
+
+    #textoIngresso {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #titulo {
+        font-size: 3rem;
+        margin-top: 25px;
+    }
+
+    #dataEvento {
+        font-size: 1.3rem;
+    }
+
+    .descricao {
+        height: auto;
+        width: 100%;
+    }
+
+    #conteudo {
+        font-weight: 100;
+        font-size: 1.4rem;
+        line-height: 33px;
+
+        padding: 10px;
+
+    }
+
+    #countDown {
+
+        font-size: 2.2rem;
+        padding: 2px;
+    }
+
+    #aviso {
+
+        font-weight: 700;
+        font-size: 1.2em;
+        line-height: 20px;
+        text-align: center;
+
+    }
+
+    #comprar{
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 500px;
+        height: 70px;
+
+        font-size: 1.5rem;
+    }
+}
